@@ -1,10 +1,12 @@
 import React from 'react';
 
-function MatchSmallCard() {
-  return (
-    <div>
-      MatchSmallCard
-    </div>
-  )
+function MatchSmallCard({ match }) {
+	return (
+		<div>
+			<p>
+				{match.team1} vs {match.team2}
+			</p>
+		</div>
+	);
 }
 export default MatchSmallCard;

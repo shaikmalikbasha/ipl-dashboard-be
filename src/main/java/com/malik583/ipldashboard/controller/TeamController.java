@@ -4,14 +4,12 @@ import com.malik583.ipldashboard.model.Team;
 import com.malik583.ipldashboard.repository.MatchRepository;
 import com.malik583.ipldashboard.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController(value = "")
+@RestController(value = "/api")
+@CrossOrigin
 public class TeamController {
 
     private final TeamRepository teamRepository;
